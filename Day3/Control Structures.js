@@ -83,6 +83,28 @@ switch (score) {
     console.log('Invalid Score')
     break
 }
+// attempt2
+score = 80
+grade = ""
+
+switch (true) {
+    case score >= 90 && score <= 100:
+        grade = "A"
+        break
+    case score >= 80 && score < 90:
+        grade = "B"
+        break
+    case score >= 70 && score < 80:
+        grade = "C"
+        break
+    case score >= 60 && score < 70:
+        grade = "D"
+        break
+    case score < 60:
+        grade = "F"
+        break
+}
+console.log(grade)
 
 // ====================>Activitiy 4: Conditional(Ternary) operartor
 // Task 6:
