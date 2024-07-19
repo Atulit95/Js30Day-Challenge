@@ -29,10 +29,11 @@ const Book2 = {
     title: "Eat the Frog.",
     author: "Brian Tracy",
     year: "2015",
-
+    // 3
     details(){
         console.log(`The Book: "${this.title}" is written by ${this.author}`);
     },
+    // 4
     updateYear(newYear){
         this.year = newYear
         console.log(`The new year of book is: ${Book2.year}`);
