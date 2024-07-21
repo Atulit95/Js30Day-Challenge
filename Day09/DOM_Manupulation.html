@@ -20,7 +20,7 @@
     </ul>
     <img class="drawing" src="https://imgs.search.brave.com/KJm5w-cbELGkNcYvZ6RLPOkg9y9vZK_xGQGWeDH31N8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I2L1BlbmNpbF9k/cmF3aW5nX29mX2Ff/Z2lybF9pbl9lY3N0/YXN5LmpwZw" alt="image"></img>
     <p class = "para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur eveniet atque quia laudantium, similique rem possimus quam cumque deleniti dolorum accusantium ipsa fuga numquam quibusdam voluptatum provident. Quis, perferendis recusandae.</p>
-    <button id="btn" class="button" style="width: 200px; height: 100px; font-size: 50%; bor">Click</button>
+    <button id="btn" class="button" style="width: 200px; height: 100px; font-size: 50%;">Click</button>
 </body>
 <script>
 // ====================>Activitiy 1: Selecting and Manupulating element
@@ -71,13 +71,13 @@
     const ptag = document.querySelector(".para")
     const btn = document.querySelector('button').addEventListener('click',()=>{
         ptag.innerHTML = "Text after button is clicked."
-    })
+    });
 
 // Task 10:
 
     const mpuseoveraction = document.querySelector('.same2').addEventListener('mouseover',()=>{
         document.querySelector('.same2').style.backgroundColor = 'purple';
         imgElem.style.borderRadius = "400px";
-    })
+    });
 </script>
 </html>
