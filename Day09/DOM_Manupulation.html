@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js 30Days Practise</title>
+</head>
+<body style="background-color: #212121; color: #fff; font-size: 70px;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div id= "one" class="day1">Monday</div>
+        <div id= "one"class="day2">Tuesday</div>
+        <div class="day3">Wednesday</div>
+        <div class="day4">Thursday</div>
+    </div>
+    <ul class="li">
+        <li class="same">NINE</li>
+        <li class="same">NINE</li>
+        <li class="same">NINE</li>
+    </ul>
+    <img class="drawing" src="https://imgs.search.brave.com/KJm5w-cbELGkNcYvZ6RLPOkg9y9vZK_xGQGWeDH31N8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9i/L2I2L1BlbmNpbF9k/cmF3aW5nX29mX2Ff/Z2lybF9pbl9lY3N0/YXN5LmpwZw" alt="image"></img>
+
+</body>
+<script>
+// ====================>Activitiy 1: Selecting and Manupulating element
+// Task 1:    
+    const day1 = document.getElementById("one");
+    day1.innerHTML = "First Day Of week";
+// Task 2: 
+    const day2 = document.querySelector(".day2");
+    day2.style.backgroundColor = 'lightblue';
+
+// ====================>Activitiy 2: Creating and Appending Elements
+// Task 3:
+    const newElem = document.createElement('div')
+    newElem.setAttribute('class',"day5")
+    newElem.appendChild(document.createTextNode("Friday"))
+    document.querySelector('.parent').appendChild(newElem)
+
+// Task 4:
+    const newli = document.createElement("li")
+    newli.setAttribute("class" , "same")
+    newli.appendChild(document.createTextNode("scripted NINIE"))
+    document.querySelector('.li').appendChild(newli)
+
+// ====================>Activitiy 3: Removing Elements
+// Task 5: 
+    const removedElem = document.querySelector(".day5")
+    removedElem.remove()
+
+// Task 6:     
+    const lastChild = document.querySelector('li:last-child')
+    lastChild.remove()
+
+// ====================>Activitiy 4: Modifying Attributes and Classes
+// Task 7:
+    const imgElem = document.querySelector(".drawing")
+    imgElem.setAttribute("src", "https://imgs.search.brave.com/-PXFoEjc4e3-PFfUjoiM5dYo__7bPF8dtv4cEu4VTRs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNS8w/Ny8wNS8xMC8xOC90/cmVlLTgzMjA3OV82/NDAuanBn")
+
+// Task 8:
+    const cssAlterdElem = document.querySelector('.day2')
+    cssAlterdElem.style.color = 'yellow'
+</script>
+</html>
